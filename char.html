@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에테르 아카데미 학생 프로필</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .academy-profile {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4a6fa5;
+            border-bottom: 3px solid #4a6fa5;
+            padding-bottom: 10px;
+            margin-bottom: 40px;
+            font-size: 2.2em;
+        }
+
+        .character-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            background-color: #ffffff;
+        }
+
+        .character-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .character-card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #4a6fa5;
+            flex-shrink: 0;
+            margin: 0 30px;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-details {
+            flex-grow: 1;
+        }
+
+        .profile-details h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+
+        .profile-details h3 {
+            color: #7f8c8d;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-weight: 300;
+            font-size: 1.1em;
+        }
+
+        .profile-details p {
+            margin: 8px 0;
+            font-size: 1em;
+            color: #555;
+        }
+
+        .label {
+            font-weight: 700;
+            color: #4a6fa5;
+            margin-right: 5px;
+        }
+
+        /* 짝수 번째 카드 정렬 조정 */
+        .character-card:nth-child(even) .profile-image {
+            margin: 0 30px 0 0;
+        }
+
+        .character-card:nth-child(odd) .profile-image {
+            margin: 0 0 0 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="academy-profile">
+    <h1>에테르 아카데미 주요 인물 소개</h1>
+
+    <div class="character-card">
+        <div class="profile-image">
+            <img src="https://mariyul.uk/acd/a-1.webp" alt="루시 아델라이드">
+        </div>
+        <div class="profile-details">
+            <h2>루시 아델라이드 (Lucy Adelaide)</h2>
+            <h3>💖 순수하고 빛나는 아델라이드 가문의 영애</h3>
+            <p><span class="label">성별:</span> 여성</p>
+            <p><span class="label">나이:</span> 21세</p>
+            <p><span class="label">직업:</span> 2학년 마법과 학생</p>
+            <p><span class="label">특이사항:</span> 아델라이드 가문 영애, {user}님의 소꿉친구</p>
+        </div>
+    </div>
+
+    <div class="character-card">
+        <div class="profile-details">
+            <h2>레이첼 화이트펠츠 (Rachel Whitepeltz)</h2>
+            <h3>✨ 왕국을 밝히는 태양, 공주님</h3>
+            <p><span class="label">성별:</span> 여성</p>
+            <p><span class="label">나이:</span> 21세</p>
+            <p><span class="label">직업:</span> 2학년 마법과 학생</p>
+            <p><span class="label">특이사항:</span> 왕국의 존경받는 공주</p>
+        </div>
+        <div class="profile-image">
+            <img src="https://mariyul.uk/acd/b-1.webp" alt="레이첼 화이트펠츠">
+        </div>
+    </div>
+    
+    <div class="character-card">
+        <div class="profile-image">
+            <img src="https://mariyul.uk/acd/c-1.webp" alt="아르웬 레이거스">
+        </div>
+        <div class="profile-details">
+            <h2>아르웬 레이거스 (Arwen Riegus)</h2>
+            <h3>🔥 꺾이지 않는 투지를 가진 무투과 학생</h3>
+            <p><span class="label">성별:</span> 여성</p>
+            <p><span class="label">나이:</span> 21세</p>
+            <p><span class="label">직업:</span> 2학년 무투과 학생</p>
+            <p><span class="label">특이사항:</span> 몰락 귀족 출신, 강한 근성</p>
+        </div>
+    </div>
+    
+    <div class="character-card">
+        <div class="profile-details">
+            <h2>메릴다 윈터하임 (Merilda Winterheim)</h2>
+            <h3>❄️ 차가운 카리스마의 윈터하임 가문 장녀</h3>
+            <p><span class="label">성별:</span> 여성</p>
+            <p><span class="label">나이:</span> 22세</p>
+            <p><span class="label">직업:</span> 3학년 무투과 학생</p>
+            <p><span class="label">특이사항:</span> 윈터하임 가문의 후계자</p>
+        </div>
+        <div class="profile-image">
+            <img src="https://mariyul.uk/acd/d-1.webp" alt="메릴다 윈터하임">
+        </div>
+    </div>
+    
+    <div class="character-card">
+        <div class="profile-image">
+            <img src="https://mariyul.uk/acd/e-1.webp" alt="예니카 아스트라">
+        </div>
+        <div class="profile-details">
+            <h2>예니카 아스트라 (Yenika Astra)</h2>
+            <h3>⭐ 떠오르는 마법계의 샛별, 천재 신입생</h3>
+            <p><span class="label">성별:</span> 여성</p>
+            <p><span class="label">나이:</span> 20세</p>
+            <p><span class="label">직업:</span> 1학년 마법과 학생</p>
+            <p><span class="label">특이사항:</span> 대륙 최고의 마법 천재</p>
+        </div>
+    </div>
+    
+    <div class="character-card">
+        <div class="profile-details">
+            <h2>녹스 노튼데일 (Knox Nortondale)</h2>
+            <h3>👑 노튼데일 가문의 후계자이자 이세계의 방문자</h3>
+            <p><span class="label">성별:</span> 남성</p>
+            <p><span class="label">나이:</span> 21세</p>
+            <p><span class="label">직업:</span> 2학년 마법과 학생</p>
+            <p><span class="label">특이사항:</span> 노튼데일 가문 후계자, 빙의자: 하도운</p>
+        </div>
+        <div class="profile-image">
+            <img src="https://mariyul.uk/acd/f-1.webp" alt="녹스 노튼데일">
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
